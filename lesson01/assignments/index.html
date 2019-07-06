@@ -4,32 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Assignment 1 - Part 2 Example</title>
+    <title>Lesson One - Assignment 2</title>
     <!-- jQuery CDN -->
-    <script 
-        src="https://code.jquery.com/jquery-3.3.1.js" 
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous">
     </script>
-    <!-- Local Files -->
-    <script src="scripts.js"></script>
+    <!-- Style -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Indie+Flower|Muli:400,800" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Script -->
+    <script src="scripts.js"></script>
+
 </head>
 
 <body>
-    <main class="main">
-        <h1>Using ES6+ Methods</h1>
-        <section class="input-set">
-            <!-- Input -->
-            <input type="text" class="input">
-            <!-- Submit for Input -->
-            <input class="submit" type="submit"></input>
-            <!-- Result markup with hook for answer -->
-            <p class="markup">My total with reduce is now: <span class="sum"></span></p>
-        </section>
-       
-        
-    </main>
+  <main>
+    <h1>Lesson One - Assignment 2</h1>
+    <h2>Original Array of Numbers: <span class="originalNumbers"></span></h2>
+
+  	<section>
+      <h2>Filter Function</h2>
+      <p>Displays all the numbers in the array that is greater than or equal to the submited value:</p>
+      <p><span class="filter"></span></p>
+  		<input class="input1" type="text" name="one">
+  		<input class="submit1" type="submit" value="submit"></input>
+  	</section>
+
+  	<section>
+      <h2>Find Function</h2>
+      <p>Finds the first number in the array that is larger than the submited value:</p>
+      <p><span class="find"></span></p>
+  		<input class="input2" type="text" name="two">
+  		<input class="submit2" type="submit" value="submit"></input>
+  	</section>
+
+    <section>
+      <h2>Map Function</h2>
+      <p>Adds the submited value to each number in the array:</p>
+      <p><span class="map"></span></p>
+      <input class="input3" type="text" name="three">
+      <input class="submit3" type="submit" value="submit"></input>
+    </section>
+
+  	<section>
+      <h2>Some Function</h2>
+      <p>Will return "true" if submitted number is smaller than at least one number in the array: </p>
+      <p><span class="some"></span></p>
+  		<input class="input4" type="text" name="four">
+  		<input class="submit4" type="submit" value="submit"></input>
+  	</section>
+
+  </main>
+
 </body>
 
 </html>

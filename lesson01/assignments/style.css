@@ -1,3 +1,49 @@
-.main {
-    padding: 2rem
+
+h1 {
+  font-family: 'Bitter', sans-serif;
+  color: #093C60;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Bitter', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Bitter', sans-serif;
+}
+
+input {
+  border: 1px solid #ECECEC;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: 'Bitter', sans-serif;
+}
+
+.submit1, .submit2, .submit3, .submit4 {
+  color: #093C60;
+  font-weight: bold;
+  background-color: lightgray;
+  border: 1px solid #ECECEC;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: 'Bitter', sans-serif;
+}
+
+section {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ECECEC;
+  width: 35em;
+}
+
+span {
+  color: white;
+  background-color: #093C60;
 }
