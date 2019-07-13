@@ -2,16 +2,144 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*:after,
-*:before {
-    box-sizing: inherit;
-}
-
 .main {
     padding: 2rem;
 }
 
 h1 {
-    color: $red;  
+    color: $dark-gray;
+    font-family: $ff;
+}
+
+h2 {
+  font-size: 23pt;
+  color: $dark-gray;
+  font-weight: bold;
+  font-family: $ff;
+}
+
+h3 {
+  font-size: 18pt;
+  color: $dark-gray;
+  font-style: italic;
+  font-weight: normal;
+  font-family: $ff;
+}
+
+
+p {
+  font-size: 16pt;
+  color: $dark-gray;
+  font-family: $ff;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img.profile {
+  border-radius: 100%;
+  width: 12em;
+  height: auto;
+}
+
+
+img.icon {
+  width: 1.5em;
+  float: left;
+  margin-right: 5pt;
+}
+
+
+.outer-box {
+  background-color: $light-gray;
+  border: $medium-gray solid 1px;
+  border-radius: $bd;
+  padding: 3em;
+  width: 80%;
+}
+
+.contact-card {
+  background-color: $pure-white;
+  border-radius: $bd;
+  padding-right: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em;
+
+}
+
+.left-card {
+    border-radius: $bd;
+    align-self: center;
+    order: 1;
+    width: 20%;
+    padding: 1em;
+  }
+
+.right-card {
+    background-color: $white;
+    border-radius: $bd;
+    align-self: center;
+    order: 2;
+    width: 50%;
+    padding: 2em;
+  }
+
+
+
+// For tablets
+@media screen and (max-width: 768px) {
+  .outer-box {
+    width: 80%;
+  }
+  .contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+    .left-card {
+      width: 90%;
+    }
+    .right-card {
+      width: 90%;
+    }
+  }
+}
+
+
+// For mobile
+@media screen and (max-width: 540px) {
+  .outer-box {
+    width: 50%;
+  }
+  .contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+    .left-card {
+      width: 90%;
+    }
+    .right-card {
+      width: 90%;
+    }
+  }
+  img.profile {
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+  }
+  strong {
+    display: block;
+  }
 }
