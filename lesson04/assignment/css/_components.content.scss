@@ -1,0 +1,72 @@
+
+// container to hold all the squares
+.container {
+  display: no-flex;
+  margin-top: 0px;
+  top: 0;
+  width: 100%
+}
+
+// Adds text over images
+.centered {
+  position: static;
+  padding-top: 2em;
+  padding-left: 1em;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  font-family: $font;
+  font-size: 1em;
+  color: $beige;
+  text-shadow: 2px 2px $gray;
+}
+
+// code that applies to all of the squares
+.square {
+  height: 15em;
+  width: 3em;
+  background-repeat: no-repeat;
+  background-position: center;
+  // start the animation on hover
+  &:hover {
+    cursor: e-resize;
+    // name the animation for the @keyframes
+    animation-name: imgmove;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    // have different levels for the animation
+    @keyframes imgmove {
+      0% {opacity: 0; width: 20%;}
+      50%  {opacity: 0.5; width: 40%;}
+      100% {opacity: 1; width: 80%;}
+    }
+  }
+}
+
+// Added different images to each box
+.square1 {
+  background-image: url("https://images.unsplash.com/photo-1470138831303-3e77dd49163e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  border-bottom: 5pt solid $green;
+}
+
+.square2 {
+  background-image: url("https://images.unsplash.com/photo-1527522922911-92b510fd0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  border-bottom: 5pt solid $pink;
+}
+
+.square3 {
+  background-image: url("https://images.unsplash.com/photo-1469394721641-25268de61797?ixlib=rb-1.2.1&auto=format&fit=crop&w=896&q=80");
+  border-bottom: 5pt solid $orange;
+}
+
+.square4 {
+  background-image: url("https://images.unsplash.com/photo-1418290232843-5d7a0bd93f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  border-bottom: 5pt solid $purple;
+}
+
+.square5 {
+  background-image: url("https://images.unsplash.com/photo-1465188466731-618dfc07a57d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  border-bottom: 5pt solid $yellow;
+}
