@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Assignment 06 - Bootstrap 4</title>
+</head>
+
+<body>
+  <header>
+    <!-- faded black overlay -->
+    <div class="overlay"></div>
+    <!-- video background for header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"></video>
+    <!-- text overlay -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Accordion</h1>
+        </div>
+      </div>
+    </div>
+</header>
+    <!-- full width nav bar -->
+  <nav class="col-12 p-0">
+    <!-- nav bar links active vs inactive depending on what page you are on -->
+    <div class="list-group list-group-flush list-group-horizontal-sm">
+      <a href="index.html" class="list-group-item list-group-item-action">Home</a>
+      <a href="images.html" class="list-group-item list-group-item-action">Images</a>
+      <a href="accordion.html" class="list-group-item list-group-item-action active bg-warning">Accordion</a>
+      <a href="form.html" class="list-group-item list-group-item-action">Form</a>
+    </div>
+  </nav>
+  <main class="row">
+    <!-- Main website content on the left, different width depending on browser size -->
+    <article class="col-xl-8 col-lg-8 col-sm-8 col-12 p-5">
+
+      <!-- Accordion code, with the default set to all levels collapsed -->
+      <div class="accordion" id="accordionExample">
+        <!-- Card container and button for the accordion level -->
+        <div class="card">
+          <div class="card-header bg-info" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Aenean Pharetra Consequat</button>
+            </h2>
+          </div>
+          <!-- Content for card in the accordion -->
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">Aenean pharetra consequat sociosqu neque hendrerit turpis natoque eros, ullamcorper gravida mauris odio suscipit felis. <mark>Quisque egestas semper sollicitudin felis aenean ultrices rhoncus, tellus per gravida in blandit inceptos nec, diam risus imperdiet fringilla integer fermentum.</mark> Senectus vel faucibus ac nulla ultrices massa placerat fermentum et, aenean parturient per phasellus facilisis feugiat vestibulum dignissim, praesent netus ut condimentum a rhoncus cubilia tellus.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-info" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Fusce Consequat Litora</button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">Fusce consequat litora sem dictumst phasellus imperdiet mattis habitasse, rhoncus <mark>quisque tempor libero ac dignissim</mark> ad luctus, molestie proin tellus ornare parturient vel vivamus. Aliquam fames suscipit vel primis potenti, tellus tempus mollis quis pretium mus, rhoncus leo quisque gravida. Sed egestas semper faucibus lacus bibendum purus ornare, mi metus himenaeos eu tristique fermentum.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-info" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed  text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Curae Suspendisse Id</button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">Curae suspendisse id malesuada erat consequat neque primis metus sollicitudin eu, quis senectus sem purus fames conubia vel aliquet. Vestibulum ultricies metus purus posuere tristique integer morbi aliquam, <mark>rhoncus quis ut pellentesque et augue malesuada, scelerisque suscipit accumsan</mark> dictum feugiat dignissim. Malesuada donec taciti fusce accumsan mattis quisque mi, cursus tellus ac consequat tempor justo purus, aenean gravida luctus aliquet ligula sociosqu.</div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- Size bar content, different width depending on browser size -->
+    <aside class="col-xl-4 col-lg-4 col-sm-4 col-12 bg-info p-5">
+      <h3 class="display-6 text-white">Praesent Donec</h1>
+      <p class="text-white">Duis tortor sagittis nulla lacinia elementum vestibulum praesent donec curabitur, ante volutpat curae id eros maecenas placerat enim mattis venenatis, leo libero cras nec cursus sapien lacus potenti. Nibh ac lacinia donec magna dictumst duis parturient mollis curae diam, ut cubilia est potenti congue imperdiet pellentesque taciti aptent. Vivamus fusce quisque pretium est taciti potenti nibh, euismod blandit ullamcorper proin at placerat porta, lobortis dictumst mi laoreet ac condimentum.</p>
+    </aside>
+
+  <!-- Full width footer -->
+    <footer class="col-12 bg-secondary p-4 text-white text-center">
+      <p><small>Quisque egestas semper sollicitudin felis aenean ultrices rhoncus</p>
+      <p>tellus per gravida in blandit inceptos nec, diam risus imperdiet fringilla integer fermentum</p>
+      <p>Senectus vel faucibus ac nulla ultrices massa placerat fermentum et</small></p>
+    </footer>
+
+  </main>
+
+</body>
+
+</html>

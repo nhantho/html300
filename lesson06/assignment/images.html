@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Assignment 06 - Bootstrap 4</title>
+</head>
+
+<body>
+  <header>
+    <!-- faded black overlay -->
+    <div class="overlay"></div>
+    <!-- video background for header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"></video>
+    <!-- text overlay -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Images</h1>
+        </div>
+      </div>
+    </div>
+</header>
+    <!-- full width nav bar -->
+  <nav class="col-12 p-0">
+    <!-- nav bar links active vs inactive depending on what page you are on -->
+    <div class="list-group list-group-flush list-group-horizontal-sm">
+      <a href="index.html" class="list-group-item list-group-item-action">Home</a>
+      <a href="images.html" class="list-group-item list-group-item-action active bg-warning">Images</a>
+      <a href="accordion.html" class="list-group-item list-group-item-action">Accordion</a>
+      <a href="form.html" class="list-group-item list-group-item-action">Form</a>
+    </div>
+  </nav>
+  <main class="row">
+    <!-- Main website content on the left, different width depending on browser size -->
+    <article class="col-xl-8 col-lg-8 col-sm-8 col-12 p-5">
+      <!-- display of random images using the bootstrap thumbnail class -->
+      <div class="flex-column justify-content-between">
+        <img src="https://picsum.photos/200?random=1" alt="..." class="img-thumbnail m-2">
+        <img src="https://picsum.photos/200?random=2" alt="..." class="img-thumbnail m-2">
+        <img src="https://picsum.photos/200?random=3" alt="..." class="img-thumbnail m-2">
+        <img src="https://picsum.photos/200?random=4" alt="..." class="img-thumbnail m-2">
+        <img src="https://picsum.photos/200?random=5" alt="..." class="img-thumbnail m-2">
+        <img src="https://picsum.photos/200?random=6" alt="..." class="img-thumbnail m-2">
+        <img src="https://picsum.photos/200?random=7" alt="..." class="img-thumbnail m-2">
+        <img src="https://picsum.photos/200?random=8" alt="..." class="img-thumbnail m-2">
+        <img src="https://picsum.photos/200?random=9" alt="..." class="img-thumbnail m-2">
+
+      </div>
+    </article>
+
+    <!-- Size bar content, different width depending on browser size -->
+    <aside class="col-xl-4 col-lg-4 col-sm-4 col-12 bg-info p-5">
+      <h3 class="display-6 text-white">Praesent Donec</h1>
+      <p class="text-white">Duis tortor sagittis nulla lacinia elementum vestibulum praesent donec curabitur, ante volutpat curae id eros maecenas placerat enim mattis venenatis, leo libero cras nec cursus sapien lacus potenti. Nibh ac lacinia donec magna dictumst duis parturient mollis curae diam, ut cubilia est potenti congue imperdiet pellentesque taciti aptent. Vivamus fusce quisque pretium est taciti potenti nibh, euismod blandit ullamcorper proin at placerat porta, lobortis dictumst mi laoreet ac condimentum.</p>
+    </aside>
+
+  <!-- Full width footer -->
+    <footer class="col-12 bg-secondary p-4 text-white text-center">
+      <p><small>Quisque egestas semper sollicitudin felis aenean ultrices rhoncus</p>
+      <p>tellus per gravida in blandit inceptos nec, diam risus imperdiet fringilla integer fermentum</p>
+      <p>Senectus vel faucibus ac nulla ultrices massa placerat fermentum et</small></p>
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
