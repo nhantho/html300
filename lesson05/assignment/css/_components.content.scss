@@ -1,13 +1,138 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:after,
-*:before {
-    box-sizing: inherit;
-}
 
 .main {
-    padding: 2rem;
+    padding: 2em;
+}
+
+// grid format for the header, full-width across the screen
+.header {
+  background: $red;
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 1;
+  align-items: center;
+  padding: 2em;
+  width: 100%;
+  // format for text within the header
+  &__text {
+    font-family: $font-fam;
+    color: $white;
+    font-size: 3em;
+    text-align: center;
+  }
+}
+
+// grid format for the nav bar, full-width across the screen
+.nav {
+  background: $green;
+  grid-column: 1 / span 12;
+  grid-row: 2 / span 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  padding: 2em;
+  // format for the ul
+  &__list {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+  }
+  // format for each item (li) in the ul
+  &__item {
+    display: inline-block;
+    font-size: 1em;
+    font-family: $font-fam;
+    margin-right: 5em;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+  // hover style for the ul
+  &__list:hover {
+    color: $purple;
+  }
+}
+
+// format for the body and main section
+.main-container {
+  display: grid;
+  // layout for the body, with 1fr = side bar and 2fr = article to give article more space
+  grid-template-columns: 1fr 2fr;
+                // grid-template-rows: 30em;    idea saved for later
+                // grid-gap: 10px;    idea saved for later
+  &.main-container > aside, article {
+    padding: 2em;
+    font-family: $font-fam;
+    color: $white;
+    font-size: 1em;
+    text-align: center;
+  }
+  & aside {
+    background-color: $purple;
+  }
+  & article {
+    background-color: $orange;
+  }
+  // font styling for the article
+  &__article-p {
+    font-family: $font-fam;
+    font-weight: lighter;
+    color: $white;
+    font-size: .7em;
+    text-align: left;
+  }
+  // font styling for the Sidebar
+  &__sidebar-p {
+    font-family: $font-fam;
+    font-weight: lighter;
+    color: $white;
+    font-size: .8em;
+    text-align: right;
+    border-right: 2pt solid $green;
+    padding-right: 0.5em;
+  }
+  &__sidebar-p:hover {
+    border-right: 2pt solid $orange;
+  }
+}
+
+// footer format, back to full-width
+.footer {
+  background: $blue;
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 1;
+  align-items: center;
+  padding: 1em;
+  width: 100%;
+  // text styling for the footer
+  &__text {
+    font-family: $font-fam;
+    color: $white;
+    font-size: 3em;
+    text-align: center;
+  }
+  // styling for the footer nav
+  &__list {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+  }
+  &__item {
+    display: inline-block;
+    font-size: 1em;
+    font-family: $font-fam;
+    margin-right: 1em;
+  }
+  &__list:hover {
+    color: $green;
+  }
+  &__item:hover {
+    text-decoration: line-through;
+  }
 }
