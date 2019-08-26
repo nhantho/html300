@@ -1,0 +1,16 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+$red: #ff0000;
+$green: #32a887;
+
+.hello {
+  h1 {
+    color: $green;
+  }
+}
+
+.router-link-exact-active {
+  border-bottom: 4px solid $red;
+  display: inline-block;
+}
